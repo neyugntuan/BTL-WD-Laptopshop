@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleTrangChu.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>TNC-Store</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="container">
+                <p>Hotline : 0703988079 - (086) 830.2123 • Email: 233404050218@ldxh.edu.vn</p>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logovttk.webp" alt=""></a>
+                </div>
+                <div class="search">
+                    <div class="search-txt">
+                        <input type="text"  placeholder="Nhập sản phẩm cần tìm...">
+                    </div>
+                    <div class="search-right">
+                        <div class="search-item"></div>
+                        <div class="search-select">
+                            <div class="search-dropdown">
+                                <span></span>
+                                <i class='bx bx-caret-down' ></i>
+                            </div>
+                            <div class="item-dropdown">
+                                <a href="">
+                                    <span>Tất cả danh mục</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="img/search-icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="cart" id="modal-cart" >
+                    <img src="img/cart-icon.svg" alt="">
+                    <span class="count-item">0</span>
+                </div>
+                <div class="modal-mask">
+                    <div class="modal-wrapper">
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <span class="modal-title">
+                                    <div>Bạn đang có 0 sản phẩm trong giỏ hàng</div>
+                                </span>
+                                <span class="modal-close">
+                                    <button type="button" class="btn btn-secondary" id="btnclose" data-dismiss="modal">X</button>
+                                </span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cart-modal">
+                                    <div class="cart-product">
+                                        <div class="cart-null">
+                                            Bạn đang không có sản phẩm nào <br>
+                                            trong giỏ hàng.
+                                        </div>
+                                    </div>
+                                    <div class="cart-total">
+                                        <div class="cart-prices">
+                                            <div class="title">Thông tin giỏ hàng</div>
+                                            <div>
+                                                Số lượng sản phẩm
+                                                <span class="p-count">0</span>
+                                            </div>
+                                            <div>
+                                                Tổng chi phí 
+                                                <span class="prices">0 đ</span>
+                                            </div>
+                                            <div class="VAT">Đã bao gồm VAT (nếu có)</div>
+                                            <a href="xacnhandonhang.html">ĐẾN GIỎ HÀNG</a>
+                                            <a href="" class="delete">XÓA GIỎ HÀNG</a>
+                                            <a href="index.html" class="xemgiohang">XEM SẢN PHẨM KHÁC</a>
+                                        </div>
+                                        <div class="cart-info">
+                                            <div class="info">
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Hỗ trợ trả góp 0%, trả trước 0đ
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Hoàn tiền 200% khi phát hiện hàng giả
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Giao hàng nhanh 3H nội thành Hà Nội
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Giao hàng từ 5 - 7 ngày toàn quốc
+                                                </div>
+                                                <div>
+                                                    <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
+                                                    Đội ngũ kĩ thuật hỗ trợ online 7/7
+                                                </div>
+                                            </div>
+                                            <div class="bank">
+                                                <a href="">
+                                                    <img src="img/tien-mat.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="img/internet-bank.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="img/mastercard.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="img/visa.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-left">
+                    <div class="item-bottom">
+                        <div class="title-item">
+                            <img src="img/DmSp.png" alt="">
+                            <span>DANH MỤC SẢN PHẨM</span>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <ul class="menu-category">
+                            <li class="item-menu-category">
+                                <a href="XayDungCauHinh.html">Xây dựng cấu hình PC</a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="XayDungCauHinh.html">Xây dựng cấu hình PC</a></h4>
+                                    <li class="item-sub">
+                                        <a href="gaming-pc.html">PRO GAMING PC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO WORKSTATION</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO DUCTIVITY</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO CREATOR</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO AUDIO</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PRO VR</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/PC-a (1).png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Máy Tính Văn Phòng. AIO, Mini PC </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Máy Tính Văn Phòng. AIO, Mini PC</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Văn Phòng TNC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Để Bàn DELL</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Để Bàn HP</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Intel NUC</a>
+                                    </li>
+
+                                    <li class="item-sub">
+                                        <a href="">Máy Tính Để Bàn ASUS</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy tính Apple iMac</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Laptops </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Laptops</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Asus</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Acer</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Dell</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop HP</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Lenovo</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Gigabyte</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop MSI</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop LG</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Văn Phòng</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Phụ kiện, Balo laptop</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Đế Tản Nhiệt Laptop</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/Laptop-c.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Apple </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Apple</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Laptop Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">iPhone</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Apple Macbook</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">ipad</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">iMac</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Macbook</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Linh kiện máy tính </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Linh kiện máy tính</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">CPU - Bộ vi xử lý</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Mainboard - Bo mạch chủ</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">VGA - Card màn hình</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ram - Bộ nhớ trong</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ổ cứng HDD</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ổ cứng SSD</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">PSU - Nguồn máy tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Case - Vỏ máy tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Combo Linh Kiện</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/linh-kien-c (1).png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">MÀN HÌNH MÁY TÍNH </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">MÀN HÌNH MÁY TÍNH</a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình HP</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Đồ Họa</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình DELL</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Viewsonic</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình Văn Phòng</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình LG</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình ASUS</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình ACER</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Màn Hình MSI</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/man-hinh-b.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Gaming Gears </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Gaming Gears </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Bàn Phím Cơ</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bàn di chuột</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ghế Công Thái Học</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Microphone</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Ghế Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Chuột Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tai Nghe Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Thiết bị Stream</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bàn Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Keycaps</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/gear-b.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">AUDIO </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Gaming Gears </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Loa Nghe Nhạc</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Loa Máy Tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tai Nghe Gaming</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tai Nghe True Wireless</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Phụ Kiện - Tản Nhiệt PC </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Phụ Kiện - Tản Nhiệt PC </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Tản nhiệt khí cho PC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Tản nước ALL IN ONE</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Quạt Tản Nhiệt PC</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Dây Nối Dài - Dây Riser</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Giá Đỡ Màn Hình</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Gía Đỡ VGA</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/tan-nhiet-b.png" alt="">
+                                    </div>
+                                </ul>           
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Thiết bị văn phòng </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Thiết bị văn phòng </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Loa Máy Tính</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Phần mềm bản quyền</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bàn phím - Chuột</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bộ bàn phím chuột không dây</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Máy in Laser</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Webcam</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Bộ Chia/Hub USB</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/van-phong-a.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Thiết bị mạng </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Thiết bị mạng </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Router WiFi</a>
+                                    </li>
+                                    <li class="item-sub">
+                                        <a href="">Card WiFi</a>
+                                    </li>
+                                    <div class="img-sub">
+                                        <img src="img/thiet-bi-mang.png" alt="">
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="item-menu-category">
+                                <a href="">Hàng Cũ - Giá Tốt </a>
+                                <i class='bx bx-chevron-right'></i>
+                                <ul class="menu-sub">
+                                    <h4> <a href="">Hàng Cũ - Giá Tốt </a></h4>
+                                    <li class="item-sub">
+                                        <a href="">Card màn hình cũ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-bottom"> 
+                        <div class="title-item">
+                            <img src="img/icon-setting.png" alt="">
+                            <a href="gaming-pc.html"><span>SẢN PHẨM</span></a>
+                        </div>
+                    </div>
+                    <div class="item-bottom"> 
+                        <div class="title-item">
+                            <img src="img/icon-setting.png" alt="">
+                            <a href="XayDungCauHinh.html"><span>XÂY DỰNG CẤU HÌNH</span></a>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <div class="title-item">
+                            <img src="img/icon-sale.png" alt="">
+                            <a href="lapgamingchat.html" class="text event"><span >LAPTOP GAMING CHẤT</span></a>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <div class="title-item">
+                            <a href="TinTuc.html"><span>TIN TỨC</span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="header-bottom-right">
+                    <div class="menu-right">
+                        <img src="img/fb-icon.svg" alt="">
+                        <img src="img/yt-icon.svg" alt="">
+                        <img src="img/instagram-icon.svg" alt="">
+                        <img src="img/png-xanh.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="img-left">
+            <img src="img/bndong.jpg" alt="">
+        </div>
+        <div class="container-main">
+            <div id="myCarousel" class="carousel side" data-ride="carousel" style="position: relative;">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banner-iteam.jpg" alt="Banner 1" class="d-block w-100" style="height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner-iteam2.jpg" alt="Banner 2" class="d-block w-100" style="height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Gigabye.jpg" alt="Banner 3" class="d-block w-100" style="height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner-iteam3.jpg" alt="Banner 4" class="d-block w-100" style="height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner-iteam4.jpg" alt="Banner 5" class="d-block w-100" style="height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner-iteam5.jpg" alt="Banner 6" class="d-block w-100" style="height: 450px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner-iteam6.png" alt="Banner 7" class="d-block w-100" style="height: 450px; object-fit: cover;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+               
+            </div>
+
+            <div id="myCarousel2" class="carousel side" data-ride="carousel" style="position: relative;margin-top: 20px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/ban-ghe-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/Danh mục SP - 17 (3).png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/Danh mục SP - 17 (3).png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/laptop-dohoa.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/laptop-dohoa.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/pc-dohoa.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/pc-dohoa.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/laptop-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/laptop-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/chuot-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/chuot-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/bpc.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/bpc.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/manhinh-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <img src="img/manhinh-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-xs-6">
+                                <img src="img/ban-ghe-gaming.png" alt="Banner 1" class="d-block w-100" style="height: 270px; object-fit: cover; margin-left: 20px;">
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#myCarousel2" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#myCarousel2" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">DANH MỤC SẢN PHẨM</p>
+                <div class="rectangle"></div>
+            </div>
+            <div class="home-category">
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(26, 93, 196);"></div> 
+                    <img src="img/cat_maytinh_v2.png" alt="">
+                    <div class="text">
+                        <div>PC Gaming</div>
+                        <div class="sm">Chiến mọi game</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(13, 20, 48);"></div> 
+                    <img src="img/cat_banphimco_v2.png" alt="">
+                    <div class="text">
+                        <div>Bàn Phím Cơ</div>
+                        <div class="sm">Gõ lướt <br> như bay</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(1, 249, 201);"></div> 
+                    <img src="img/cat_dohoa_v3.png" alt="">
+                    <div class="text">
+                        <div>PC đồ họa</div>
+                        <div class="sm">Tối ưu công việc</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(255, 204, 58);"></div> 
+                    <img src="img/cat_ laptop_v2.png" alt="">
+                    <div class="text">
+                        <div>Gaming laptop</div>
+                        <div class="sm">Làm chủ cuộc chơi<br>mọi nơi</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(209, 33, 55);"></div> 
+                    <img src="img/cat_manhinhgame_v2.png" alt="">
+                    <div class="text">
+                        <div>Màn hình <br> Gaming</div>
+                        <div class="sm">Tận hưởng<br>thế giới game</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(52, 61, 87);"></div> 
+                    <img src="img/cat_laptop_hoctap_v2.png" alt="">
+                    <div class="text">
+                        <div>Laptop<br>Văn phòng</div>
+                        <div class="sm">Mỏng nhẹ,<br>bền bỉ</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(255, 144, 5);"></div> 
+                    <img src="img/cat_chuot_gaming_v2.png" alt="">
+                    <div class="text">
+                        <div>Chuột<br>Gaming</div>
+                        <div class="sm">Chuyên nghiệp<br>từng cú click</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="shape" style="border-color: rgb(41, 50, 78) transparent rgb(253, 242, 146);"></div> 
+                    <img src="img/cat_banghe_gaming_v2.png" alt="">
+                    <div class="text">
+                        <div>Ghế Gaming</div>
+                        <div class="sm">Hiện đại, thoải mái</div>
+                    </div>
+                </a>
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">SẢN PHẨM GIẢM GIÁ</p>
+                <div class="rectangle"></div>
+            </div>
+            <div class="category-sale">
+                <div id="myCarousel3" class="carousel side" data-ride="carousel" style="position: relative;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-14%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/man-hinh-gaming-lg-24gn650-b-1-228x228.jpg" alt="Màn hình Gaming LG 24GN65R-B 23.8 inch">
+                                            </a>    
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Màn hình Gaming LG 24GN65R-B 23.8 inch/ FHD /144Hz /1Mz</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">4.290.000đ</span>
+                                                <span class="price-old">4.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-16%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/cpu-intel-core-i9-13900ks-1-228x228.jpg" alt="CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">18.490.000đ</span>
+                                                <span class="price-old">21.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-46%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/card-man-hinh-asus-tuf-rtx-3070ti-o8g-gaming-1-228x228.jpg" alt="Card màn hình Asus TUF RTX 3070 O8G GAMING V2">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Card màn hình Asus TUF RTX 3070 O8G GAMING V2</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">13.990.000đ</span>
+                                                <span class="price-old">25.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-16%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/cpu-intel-core-i9-13900ks-1-228x228.jpg" alt="CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">18.490.000đ</span>
+                                                <span class="price-old">21.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-46%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/card-man-hinh-asus-tuf-rtx-3070ti-o8g-gaming-1-228x228.jpg" alt="Card màn hình Asus TUF RTX 3070 O8G GAMING V2">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Card màn hình Asus TUF RTX 3070 O8G GAMING V2</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">13.990.000đ</span>
+                                                <span class="price-old">25.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio360.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-46%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/card-man-hinh-asus-tuf-rtx-3070ti-o8g-gaming-1-228x228.jpg" alt="Card màn hình Asus TUF RTX 3070 O8G GAMING V2">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Card màn hình Asus TUF RTX 3070 O8G GAMING V2</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">13.990.000đ</span>
+                                                <span class="price-old">25.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio360.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaionzxt.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 ">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">7.690.000đ</span>
+                                                <span class="price-old">8.290.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#myCarousel3" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#myCarousel3" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                   
+                </div>
+            </div>
+            <div class="block-readmode">
+                <a href="">XEM THÊM</a>
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">SẢN PHẨM NỔI BẬT</p>
+                <div class="rectangle"></div>
+            </div>
+            <div class="block-product">
+                <div class="product-four">
+                    <a href="" title="Dell-Inspiron-16-5620-P1WKN">
+                        <img src="img/Dell-Inspiron-16-5620-P1WKN.jpg" alt="Dell-Inspiron-16-5620-P1WKN">
+                    </a>
+                    <a href="" title="Laptop-Gaming-Acer-Nitro-5-Tiger-AN515-58-52SP">
+                        <img src="img/Laptop-Gaming-Acer-Nitro-5-Tiger-AN515-58-52SP.jpg" alt="Laptop-Gaming-Acer-Nitro-5-Tiger-AN515-58-52SP">
+                    </a>
+                    <a href="" title="Asus-Dual-RTX™-4070">
+                        <img src="img/Asus-Dual-RTX™-4070.jpg" alt="Asus-Dual-RTX™-4070">
+                    </a>
+                    <a href="" title="MSI-RTX-4070-VENTUS-2X">
+                        <img src="img/MSI-RTX-4070-VENTUS-2X.jpg" alt="MSI-RTX-4070-VENTUS-2X">
+                    </a>
+                </div>
+                <div class="product-one">
+                    <a href="" title="MSI radeon rx 6900xt">
+                        <img src="img/khung-10sp-Recovered (1).jpg" alt="MSI radeon rx 6900xt">
+                    </a>
+                </div>
+            </div>
+            <div class="block-readmode">
+                <a href="">XEM THÊM</a>
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">SẢN PHẨM MỚI VỀ</p>
+                <div class="rectangle"></div>
+            </div>
+            <div class="category-sale">
+                <div id="myCarousel5" class="carousel side" data-ride="carousel" style="position: relative;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-14%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/man-hinh-gaming-lg-24gn650-b-1-228x228.jpg" alt="Màn hình Gaming LG 24GN65R-B 23.8 inch">
+                                            </a>    
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Màn hình Gaming LG 24GN65R-B 23.8 inch/ FHD /144Hz /1Mz</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">4.290.000đ</span>
+                                                <span class="price-old">4.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-16%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/cpu-intel-core-i9-13900ks-1-228x228.jpg" alt="CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">18.490.000đ</span>
+                                                <span class="price-old">21.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-46%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/card-man-hinh-asus-tuf-rtx-3070ti-o8g-gaming-1-228x228.jpg" alt="Card màn hình Asus TUF RTX 3070 O8G GAMING V2">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Card màn hình Asus TUF RTX 3070 O8G GAMING V2</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">13.990.000đ</span>
+                                                <span class="price-old">25.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-16%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/cpu-intel-core-i9-13900ks-1-228x228.jpg" alt="CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">CPU Intel Core I9-13900KS (68M Cache, up to 6.0GHz, 24C32T,</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">18.490.000đ</span>
+                                                <span class="price-old">21.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-46%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/card-man-hinh-asus-tuf-rtx-3070ti-o8g-gaming-1-228x228.jpg" alt="Card màn hình Asus TUF RTX 3070 O8G GAMING V2">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Card màn hình Asus TUF RTX 3070 O8G GAMING V2</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">13.990.000đ</span>
+                                                <span class="price-old">25.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio360.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-46%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/card-man-hinh-asus-tuf-rtx-3070ti-o8g-gaming-1-228x228.jpg" alt="Card màn hình Asus TUF RTX 3070 O8G GAMING V2">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Card màn hình Asus TUF RTX 3070 O8G GAMING V2</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">13.990.000đ</span>
+                                                <span class="price-old">25.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB White</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaio360.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360 RGB</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">8.390.000đ</span>
+                                                <span class="price-old">8.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/tannhietaionzxt.jpg" alt="Tản nhiệt nước AIO NZXT Kraken Elite 360 ">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Tản nhiệt nước AIO NZXT Kraken Elite 360</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">7.690.000đ</span>
+                                                <span class="price-old">8.290.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#myCarousel5" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#myCarousel5" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                   
+                </div>
+            </div>
+            <div class="block-readmode">
+                <a href="">XEM THÊM</a>
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">SẢN PHẨM BÁN CHẠY</p>
+                <div class="rectangle"></div>
+            </div>
+            <div class="category-sale">
+                <div id="myCarousel4" class="carousel side" data-ride="carousel" style="position: relative;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-10%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/pc-gaming-sniper-3060-itx-1-228x228.jpg" alt="PC Gaming - Sniper I3060 ITX">
+                                            </a>    
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">PC Gaming - Sniper I3060 ITX</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                </div>
+                                                <div class="rate-text">5 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">29.799.000đ</span>
+                                                <span class="price-old">32.979.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-12%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/44382_v____case_asus_tuf_gaming_gt502_black-228x228.jpg" alt="Vỏ Case ASUS TUF GT502 ">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Vỏ Case ASUS TUF GT502 ,</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">2.990.000đ</span>
+                                                <span class="price-old">3.390.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/ban-phim-co-khong-day-akko-5075b-plus-dragon-ball-super-goku-rgb-hotswap-akko-cs-sw-crystal-228x228.jpg" alt="Bàn phím AKKO 5075B Plus Dragon Ball Super - Goku (AKKO CS switch - Crystal)">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Bàn phím AKKO 5075B Plus Dragon Ball Super - Goku (AKKO </a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                </div>
+                                                <div class="rate-text">5 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">2.789.000đ</span>
+                                                <span class="price-old">2.999.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-6%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/nguon-deepcool-pf450d-450w-80-plus-white-1-228x228.jpg" alt="Nguồn DeepCool PF450D 450W 80 Plus">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Nguồn DeepCool PF450D 450W 80 Plus</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                </div>
+                                                <div class="rate-text">5 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">849.000đ</span>
+                                                <span class="price-old">899.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-12%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/44382_v____case_asus_tuf_gaming_gt502_black-228x228.jpg" alt="Vỏ Case ASUS TUF GT502 ">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Vỏ Case ASUS TUF GT502 ,</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">2.990.000đ</span>
+                                                <span class="price-old">3.390.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-7%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/ban-phim-co-khong-day-akko-5075b-plus-dragon-ball-super-goku-rgb-hotswap-akko-cs-sw-crystal-228x228.jpg" alt="Bàn phím AKKO 5075B Plus Dragon Ball Super - Goku (AKKO CS switch - Crystal)">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Bàn phím AKKO 5075B Plus Dragon Ball Super - Goku (AKKO </a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                </div>
+                                                <div class="rate-text">5 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">2.789.000đ</span>
+                                                <span class="price-old">2.999.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-6%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/nguon-deepcool-pf450d-450w-80-plus-white-1-228x228.jpg" alt="Nguồn DeepCool PF450D 450W 80 Plus">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Nguồn DeepCool PF450D 450W 80 Plus</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                </div>
+                                                <div class="rate-text">5 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">849.000đ</span>
+                                                <span class="price-old">899.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-14%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/ban-phim-edra-ek3104l-1-228x228.jpg" alt="Bàn phím cơ E-DRA EK3104L Blue Switch">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Bàn phím cơ E-DRA EK3104L Blue Switch</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">689.000đ</span>
+                                                <span class="price-old">799.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-49%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/chuot.jpg" alt="Chuột Razer Viper 8KHz_RZ01-03580100-R3M1">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Chuột Razer Viper 8KHz_RZ01-03580100-R3M1</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">1.029.000đ</span>
+                                                <span class="price-old">1.999.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-0%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/loa-edifier-qd35-black-1-228x228.jpg" alt="Loa Edifier QD35 Black">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Loa Edifier QD35 Black</a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="rate-text">0 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">3.990.000đ</span>
+                                                <span class="price-old">3.990.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-6%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/ban-phim-co-akko-3068b-multi-modes-prunus-lannesiana-01-228x228.jpg" alt="Bàn phím AKKO 3068B Plus Prunus Lannesiana (AKKO CS switch - Jelly Purple)">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Bàn phím AKKO 3068B Plus Prunus Lannesiana (AKKO CS </a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                </div>
+                                                <div class="rate-text">5 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">1.889.000đ</span>
+                                                <span class="price-old">1.999.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product">
+                                        <div class="precent">
+                                            <span>-3%</span>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="" class="product-link">
+                                                <img src="img/ban-phim-akko-3068b-plus-world-tour-tokyo-r2-pink-2-228x228.jpg" alt="Bàn Phím AKKO 3068B Plus World Tour Tokyo R2 (Akko CS Switch - Jelly Purple)">
+                                            </a>
+                                        </div>
+                                        <div class="product-bottom">
+                                            <div class="product-title">
+                                                <a href="" class="product__link">Bàn Phím AKKO 3068B Plus World Tour Tokyo R2 (Akko CS Switch - </a>
+                                            </div>
+                                            <div class="product-rate">
+                                                <div class="rate-star">
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                    <i class='bx bxs-star' style='color:#fcc00b'  ></i>
+                                                </div>
+                                                <div class="rate-text">5 đánh giá</div>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="price-sell">2.039.000đ</span>
+                                                <span class="price-old">2.099.000đ</span>
+                                            </div>
+                                            <button type="button" class="add-to-cart">Mua Ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#myCarousel4" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#myCarousel4" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                   
+                </div>
+            </div>
+            <div class="block-readmode">
+                <a href="">XEM THÊM</a>
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">TNC CHANNEL</p>
+                <div class="rectangle"></div>
+            </div>
+            <div class="block-main-tnc">
+                <div class="tnc-big">
+                    <div class="tnc-big-thum">
+                        <img src="img/THUMBNAIL-PC-90TR.jpg" alt="   ">
+                    </div>
+                    <a href="">BUILD PC GAMING | Chiến thần PC Gần Full Aorus 90 Triệu Thì có gì?</a>
+                </div>
+
+                <div class="tnc-list">
+                    <div class="tnc-list-item">
+                        <div class="tnc-thumb">
+                            <img src="img/THUMBNAIL (5).jpg" alt="">
+                        </div>
+                        <a href="" class="tnc-title">LONG KHOA HỌC x TNC - Cấu Hình PC 25 TRIỆU Mà BẤT KỲ AI Cũng NÊN Sở Hữu, Tặng TẢN NHIỆT NƯỚC!!!</a>
+                    </div>
+                    <div class="tnc-list-item">
+                        <div class="tnc-thumb">
+                            <img src="img/THUMBNAIL-90TR.jpg" alt="">
+                        </div>
+                        <a href="" class="tnc-title">Hướng dẫn Build PC | Timelapse Build PC Chiến thần Gaming 90 Triệu cực Chill 13900KF/VGA RTX 4090</a>
+                    </div>
+                    <div class="tnc-list-item">
+                        <div class="tnc-thumb">
+                            <img src="img/THUMBNAIL-AKKO.jpg" alt="">
+                        </div>
+                        <a href="" class="tnc-title">BÀN PHÍM CƠ ĐẦY ĐỦ TIỆN NGHI DÀNH CHO NGƯỜI YÊU "TRÀ XANH" MATCHA - AKKO 3108 RF MATCHA</a>
+                    </div>
+                    <div class="tnc-list-item">
+                        <div class="tnc-thumb">
+                            <img src="img/THUMBNAIL hi.jpg" alt="">
+                        </div>
+                        <a href="" class="tnc-title">ACER PREDATOR HELIOS 18, 120 TRIỆU - Vẫn Là Anh Ấy Nhưng Đã "TO" Và "KHỎE KHOẮN" Hơn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-readmode">
+                <a href="">XEM THÊM VIDEO</a>
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">GIỚI THIỆU VỀ TNC</p>
+                <div class="rectangle"></div>
+            </div>
+            <div class="information-tnc">
+                <div class="tnc-intro">
+                    <div class="tnc-intro-title">TNC Store - Địa chỉ sắm PC/Laptop uy tín hàng đầu Việt Nam! </div>
+                    TNC Store tự hào với tôn chỉ luôn lấy khách hàng làm trọng tâm bằng việc cung cấp các dịch vụ hậu mãi chu đáo, tận tâm để mang đến cho khách hàng những sản phẩm có chất lượng và trải nghiệm với PC/Laptop tốt nhất! Chúng tôi đảm bảo bạn sẽ có được những trải nghiệm tuyệt vời nhất khi, sử dụng các dịch vụ và sản phẩm của TNC Store.
+                </div>
+                <div class="img">
+                    <img src="img/tnc-img-1.png" alt="">
+                </div>
+            </div>
+            <div class="block-readmode">
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">CÁC THƯƠNG HIỆU</p>
+                <div class="rectangle"></div>
+            </div>
+            <div id="myCarousel6" class="carousel side" data-ride="carousel" style="position: relative;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-2">                        
+                                <img src="img/acer.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/adata.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/aero.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/afox.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/akko.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/amdo.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2">                        
+                                <img src="img/antec.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/noc.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/zotac.svg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/asus.png" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/iphone.jpg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                            <div class="col-2">                        
+                                <img src="img/ASRock-logo-228x228.jpg" alt="Banner 1" class="d-block w-100" style="height: 120px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#myCarousel6" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#myCarousel6" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+               
+            </div>
+            <div class="block-readmode">
+            </div>
+            <div class="header-product-selection-section">
+                <div class="rectangle"></div>
+                <p id="font-header">ĐÁNH GIÁ TỪ KHÁCH HÀNG</p>
+                <div class="rectangle"></div>
+            </div>
+            <div id="myCarousel7" class="carousel side" data-ride="carousel" style="position: relative;">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/1.jpg" alt="Banner 1" class="d-block w-100" style="height: 290px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" alt="Banner 2" class="d-block w-100" style="height: 290px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/3.jpg" alt="Banner 3" class="d-block w-100" style="height: 290px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/4.jpg" alt="Banner 4" class="d-block w-100" style="height: 290px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/5.jpg" alt="Banner 5" class="d-block w-100" style="height: 290px; object-fit: cover;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#myCarousel7" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#myCarousel7" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+                <div class="block-readmode">
+                </div>
+            </div>
+        </div>
+        <div class="img-right">
+            <img src="img/btndong2.jpg" alt="">
+        </div>
+        
+    </div>
+    <footer id="footer">
+        <div class="footer-information">
+            <div class="frame-header-footer">
+                <div class="frame-general-information">
+                    <p id="title-header">Thông tin chung</p>
+                    <div class="content-header" >
+                        <p id="content">Giới thiệu TNC Store</p>
+                        <p id="content">Tuyển dụng</p>
+                        <p id="content">Tin tức</p>
+                        <p id="content">Ý kiến khách hàng</p>
+                        <p id="content">Liện hệ hợp tác</p>
+                    </div>
+                </div>
+                <div class="frame-policy">
+                    <p id="title-header">Chính sách chung</p>
+                    <div class="content-header">
+                        <p id="content">Quy định chung</p>
+                        <p id="content">Chính sách vận chuyển</p>
+                        <p id="content">Chính sách bảo hành</p>
+                        <p id="content">Chính sách đổi, trả lại hàng</p>
+                        <p id="content">Chính sách cho doanh nghiệp</p>
+                    </div>
+                </div>
+                <div class="promotion">
+                    <p id="title-header">Thông tin khuyến mãi</p>
+                    <div class="content-header">
+                        <p id="content">Sản phẩm bán chạy</p>
+                        <p id="content">Sản phẩm khuyến mãi</p>
+                        <p id="content">Hàng thanh lý</p>
+                        <p id="content"><br></p>
+                        <p id="content"><br></p>
+                    </div>
+                </div>
+                <div class="fllow-us">
+                    <p id="title-header">Follow us!</p>
+                    <div class="img-footer">
+                        <img src="img/fb-white.svg" alt="">
+                        <img src="img/yt-white.svg" alt="">
+                        <img src="img/shop-white.svg" alt="">
+                        <img src="img/ins-white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="frame-tail">
+                <div class="content-tail">
+                    <p id="title-header">Công ty TNHH TUAN KHANG COMPUTER</p>
+                    <div class="content-tail-address">
+                        <p id="content">CN Hà Nội : 120 Yên Lãng, Đống Đa, Hà Nội / Tel: (024) 36288790 / (086) 830.2123</p>
+                        <p id="content">CN Hồ Chí Minh : Số 135 Nam Kỳ khởi nghĩa, phường Bến Thành, Quận 1, Hồ Chí Minh / Tel: (098) 978 1468</p>
+                        <p id="content">Trụ sở (Không bán hàng): 1018 Tô Ký, Phường Trung Mỹ Tây, Tp. Hồ Chí Minh / Tel: (086) 8302123; Fax : (024) 36288790</p>
+                    </div>
+                </div class="logo">
+                    <img src="img/logo-dma.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-tail">
+            <div class="frame-footer-tail">
+                <div class="content-footer-tail">
+                    <p>© 2020 - Bản quyền của Công ty TNHH Tuan Khang Computer</p>
+                </div>
+                <div class="img-footer-tail">
+                    <img src="img/tien-mat.svg" alt="">
+                    <img src="img/internet-bank.svg" alt="">
+                    <img src="img/mastercard.svg" alt="">
+                    <img src="img/visa.svg" alt="">
+                    <img src="img/bo-cong-thuong.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>
