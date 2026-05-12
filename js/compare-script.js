@@ -2,7 +2,7 @@
 const db = {
     "lap1": {
         name: "Laptop Gaming XYZ 2026",
-        img: "https://via.placeholder.com/300x200?text=Laptop+XYZ",
+        img: "img/lap2026.png",
         price: "25.990.000 ₫",
         cpu: "Intel Core i7-13700H",
         ram: "16GB DDR5 4800MHz",
@@ -12,7 +12,7 @@ const db = {
     },
     "lap2": {
         name: "Laptop Creator Pro Mac",
-        img: "https://via.placeholder.com/300x200?text=Creator+Pro",
+        img: "img/Macbook.jpg",
         price: "32.490.000 ₫",
         cpu: "Apple M3 Pro",
         ram: "18GB Unified Memory",
@@ -22,7 +22,7 @@ const db = {
     },
     "lap3": {
         name: "Laptop Văn Phòng Eco",
-        img: "https://via.placeholder.com/300x200?text=Van+Phong+Eco",
+        img: "img/lapvp.jpg",
         price: "14.500.000 ₫",
         cpu: "Intel Core i5-1235U",
         ram: "8GB DDR4 3200MHz",
@@ -32,7 +32,7 @@ const db = {
     },
     "lap4": {
         name: "Laptop Asus ROG Swift",
-        img: "https://via.placeholder.com/300x200?text=ROG+Swift",
+        img: "img/Rog.webp",
         price: "45.000.000 ₫",
         cpu: "AMD Ryzen 9 7940HS",
         ram: "32GB DDR5 5600MHz",

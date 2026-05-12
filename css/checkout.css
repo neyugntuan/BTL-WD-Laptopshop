@@ -3,6 +3,17 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.body{
+    background: #f9fafb;
+    color: #111827;
+}
+
+.body-lr{
+    background: #0f1115;
+    color: #f3f4f6;
+    width: auto;
+}
 #header{
     width: 100%;
    
@@ -120,7 +131,7 @@
     border-radius: 6px;
     cursor: pointer;
     transition: .3s;
-    width: 150px;
+    width: 400px;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
