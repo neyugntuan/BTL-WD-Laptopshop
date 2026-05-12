@@ -5,7 +5,6 @@
 }
 #header{
     width: 100%;
-   
 }
 .header-top{
     width: auto;
@@ -79,6 +78,33 @@
     align-items: center;
     cursor: pointer;
     position: relative;
+}
+
+.login-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #29324e;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.login-btn i{
+    color: white;
+    font-size: 18px;
+}
+
+.login-btn:hover{
+    background: #005ec4;
 }
 
 .search-select:hover .item-dropdown{ 
@@ -379,31 +405,12 @@
 
 #container{
     display: flex;
+    justify-content: center;
 }
 .container-main{
     width: 1110px;
-    margin: 20px;
 }
-.img-left{
-    position: sticky;
-    top: 50px;
-    width: 160px;
-    height: 600px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    margin-left: 30px;
-}
-.img-right{
-    position: sticky;
-    top: 50px;
-    width: 160px;
-    height: 600px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    margin-right: 30px;
-}
+
 
 .header-product-selection-section{
     width: 1110px;

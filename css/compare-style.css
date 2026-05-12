@@ -1,0 +1,104 @@
+.compare-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.compare-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+}
+
+/* Khung cuộn ngang cho màn hình nhỏ */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.compare-table th, .compare-table td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Định dạng cột tính năng (Cột 1) */
+.compare-table th.feature-col, 
+.compare-table td.feature-name {
+    background-color: #f8f9fa;
+    text-align: right;
+    font-weight: bold;
+    color: #555;
+    width: 15%;
+}
+
+.compare-table thead th {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+/* Dropdown chọn sản phẩm */
+.product-selector {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+.product-selector:focus {
+    border-color: #007bff;
+}
+
+/* Định dạng nội dung bên trong bảng */
+.compare-img {
+    width: 150px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.compare-price {
+    color: #e50027;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.empty-slot {
+    color: #999;
+    font-style: italic;
+}
+
+/* Tô màu xen kẽ cho các hàng để dễ theo dõi */
+.compare-table tbody tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+.compare-table tbody tr:nth-child(even) td.feature-name {
+    background-color: #f1f3f5; /* Cột tiêu đề đậm hơn chút */
+}
+
+/* Nút thêm vào giỏ hàng ngay trong bảng so sánh */
+.btn-small {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.btn-small:hover {
+    background-color: #0056b3;
+}

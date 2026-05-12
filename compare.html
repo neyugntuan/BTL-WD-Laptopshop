@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/giohang.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Order Confirmation</title>
-</head>
-<body>
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So Sánh Sản Phẩm</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/compare-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header id="header">
         <div class="header-top">
             <div class="container">
@@ -84,7 +83,7 @@
                                                 <span class="prices">0 đ</span>
                                             </div>
                                             <div class="VAT">Đã bao gồm VAT (nếu có)</div>
-                                            <a href="thanhtoan.html" > THANH TOÁN</a>
+                                            <a href="giohang.html">ĐẾN GIỎ HÀNG</a>
                                             <a href="" class="delete">XÓA GIỎ HÀNG</a>
                                             <a href="index.html" class="xemgiohang">XEM SẢN PHẨM KHÁC</a>
                                         </div>
@@ -285,101 +284,50 @@
             </div>
         </div>
     </header>
+    
+    
 
     <div id="container">
-        <div class="container-main">
-            <div class="cart-container">
-                <div class="cart-product">
-                    <div class="cart-header">
-                        <div class="cart-header-iteam active col-sm-4">
-                            <span>1. Chọn sản phẩm</span>
-                        </div>
-                        <div class="cart-header-iteam active col-sm-4">
-                            <span>2. Xác nhận đơn hàng</span>
-                        </div>
-                        <div class="cart-header-iteam col-sm-4">
-                            <span>3. Thanh toán</span>
-                        </div>
-                    </div>
-                    <div class="cart-main">
-                        <div class="title">THÔNG TIN SẢN PHẨM
-                        </div>
-                        <div class="icon">
-                            <a href="">
-                                <i class='bx bx-download' style='color:#0d51f2'  ></i>
-                                Tải báo giá
-                            </a>
-                            <a href="">
-                                <i class='bx bx-printer' style='color:#0d51f2' ></i>
-                                In báo giá
-                            </a>
-                        </div>
-                    </div>
-                    <div class="">Bạn đang không có sản phẩm nào trong giỏ hàng.</div>
-                </div>
-                <div class="cart-total">
-                    <div class="cart-prices">
-                        <div class="title">Thông tin giỏ hàng</div>
-                        <div>
-                            Số lượng sản phẩm
-                            <span class="p-count">0</span>
-                        </div>
-                        <div>
-                            Tổng chi phí 
-                            <span class="prices">0 đ</span>
-                        </div>
-                        <div class="VAT">Đã bao gồm VAT (nếu có)</div>
-                        <a href="thanhtoan.html">THANH TOÁN</a>
-                        <a href="" class="delete">XÓA GIỎ HÀNG</a>
-                        <a href="" class="xemgiohang">XEM SẢN PHẨM KHÁC</a>
-                    </div>
-                    <div class="cart-info">
-                        <div class="info">
-                            <div>
-                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
-                                Hỗ trợ trả góp 0%, trả trước 0đ
-                            </div>
-                            <div>
-                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
-                                Hoàn tiền 200% khi phát hiện hàng giả
-                            </div>
-                            <div>
-                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
-                                Giao hàng nhanh 3H nội thành Hà Nội
-                            </div>
-                            <div>
-                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
-                                Giao hàng từ 5 - 7 ngày toàn quốc
-                            </div>
-                            <div>
-                                <i class='bx bxs-check-circle' style='color:#00a131'  ></i>
-                                Đội ngũ kĩ thuật hỗ trợ online 7/7
-                            </div>
-                        </div>
-                        <div class="bank">
-                            <a href="">
-                                <img src="img/tien-mat.svg" alt="">
-                            </a>
-                            <a href="">
-                                <img src="img/internet-bank.svg" alt="">
-                            </a>
-                            <a href="">
-                                <img src="img/mastercard.svg" alt="">
-                            </a>
-                            <a href="">
-                                <img src="img/visa.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-product-selection-section">
-                <div class="rectangle"></div>
-                <p id="font-header">SẢN PHẨM VỪA XEM</p>
-                <div class="rectangle"></div>
-            </div>
+        <div class="content-center">
+            <div class="compare-container">
+        <h2 class="compare-title">So Sánh Chi Tiết Sản Phẩm</h2>
+        
+        <div class="table-responsive">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th class="feature-col">Tính năng</th>
+                        <th>
+                            <select id="prod-1" class="product-selector" onchange="updateCompareTable()">
+                                <option value="">-- Chọn sản phẩm --</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select id="prod-2" class="product-selector" onchange="updateCompareTable()">
+                                <option value="">-- Chọn sản phẩm --</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select id="prod-3" class="product-selector" onchange="updateCompareTable()">
+                                <option value="">-- Chọn sản phẩm --</option>
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="compare-body">
+                    </tbody>
+            </table>
         </div>
     </div>
+    <br>
+    <div class="back-btn">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Về Trang chủ</a>
+    </div>
+    <br>
+        </div>
+    </div>
+
+    
 
     <footer id="footer">
         <div class="footer-information">
@@ -387,7 +335,7 @@
                 <div class="frame-general-information">
                     <p id="title-header">Thông tin chung</p>
                     <div class="content-header" >
-                        <p id="content">Giới thiệu TKC Store</p>
+                        <p id="content">Giới thiệu TkC Store</p>
                         <p id="content">Tuyển dụng</p>
                         <p id="content">Tin tức</p>
                         <p id="content">Ý kiến khách hàng</p>
@@ -453,5 +401,6 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/cart.js"></script>
-</body>
+    <script src="js/compare-script.js"></script>
+  </body>
 </html>

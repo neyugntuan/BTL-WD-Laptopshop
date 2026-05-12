@@ -81,6 +81,33 @@
     position: relative;
 }
 
+.login-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #29324e;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.login-btn i{
+    color: white;
+    font-size: 18px;
+}
+
+.login-btn:hover{
+    background: #005ec4;
+}
+
 .search-select:hover .item-dropdown{ 
     display: block;
     visibility: visible;
@@ -277,15 +304,13 @@
     display: flex;
     gap: 10px;
 }
-#container {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-  }
+#container{
+    display:flex;
+    justify-content:center;
+}
+
 .container-main{
-    width: 1110px;
-    height: 1015px;
-    margin-top: 40px;
+    width:1110px;
 }
 .path{
     height: 20px;
@@ -395,26 +420,7 @@
     width: 40px;
     opacity: 0.7;
 }
-.img-left{
-    position: sticky;
-    top: 50px;
-    width: 120px;
-    height: 600px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    margin-left: 10px;
-}
-.img-right{
-    position: sticky;
-    top: 50px;
-    width: 120px;
-    height: 600px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    margin-right: 10px;
-}
+
 .frame-header{
     height: 270px;
 }
