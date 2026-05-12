@@ -16,7 +16,6 @@
     font-weight: 200px;
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 .header-top .container{
     width: 1400px;
@@ -681,54 +680,54 @@
 .block-product .product-one a img{
     width: 540px;
 }
-.block-main-tnc{
+.block-main{
     display: flex;
     justify-content: space-between;
     width: 1110px;
 }
-.block-main-tnc .tnc-big .tnc-big-thum img{
+.block-main .big .big-thum img{
     width: 636px;
 }
-.block-main-tnc .tnc-big{
+.block-main .big{
     width: 636px;
 }
-.block-main-tnc .tnc-big a{
+.block-main .big a{
     font-weight: 700;
     color: black;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 24px;
 }
-.block-main-tnc .tnc-list .tnc-thumb img{
+.block-main .list .thumb img{
     width: 160px;
     height: 90px;
 }
-.block-main-tnc .tnc-title{
+.block-main .title{
     font-weight: 700;
     color: black;
     text-decoration: none;
     font-size: 16px;
     line-height: 1.4em;
 }
-.block-main-tnc .tnc-list{
+.block-main .list{
     width: 445px;
 }
-.block-main-tnc .tnc-list-item{
+.block-main .list-item{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     gap: 30px;
 }
-.information-tnc{
+.information{
     display: flex;
     background-color: #29324e;
 }
-.information-tnc .tnc-intro{
+.information .intro{
     margin: 48px 0px 0px 40px;
     color: white;
     font-size: 16px;
     line-height: 24px;
 }
-.information-tnc .tnc-intro .tnc-intro-title{
+.information .intro .intro-title{
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
