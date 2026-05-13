@@ -26,7 +26,7 @@ if(cart.length === 0){
         
             <div class="cart-item">
 
-                <img src="${item.image}" alt="">
+                <img src="${item.image}" alt="abc">
 
                 <div class="cart-item-info">
 
