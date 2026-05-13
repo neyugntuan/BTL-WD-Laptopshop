@@ -429,7 +429,6 @@
 }
 .container-content{
     width: 1110px;
-    height: 1740px;
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -478,6 +477,12 @@
     width: 346px;
     height: 380px;
 }
+
+.news-img{
+    width: 346px;
+    height: 195px;
+}
+
 #Font-Tittle-Product{
     font-size: 16px;
     font-family: "Chakra Petch", sans-serif;

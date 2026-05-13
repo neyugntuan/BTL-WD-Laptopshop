@@ -17,3 +17,22 @@ function addToCart() {
     // Thực tế sẽ dùng mảng (array) để lưu trữ giỏ hàng trong LocalStorage hoặc gửi lên Server
     alert("Sản phẩm đã được thêm vào giỏ hàng thành công!");
 }
+
+
+//chitietsp
+const product = JSON.parse(
+    localStorage.getItem('productDetail')
+);
+
+if(product){
+
+    document.querySelector('.detail-name').innerText =
+        product.name;
+
+    document.querySelector('.detail-price').innerText =
+        Number(product.price).toLocaleString() + ' ₫';
+
+    document.querySelector('.detail-image').src =
+        product.image;
+
+}
